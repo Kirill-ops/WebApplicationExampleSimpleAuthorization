@@ -17,7 +17,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidateLifetime = true,
 
         // Вот это вынести в отдельный класс, секретный ключ должен быть длинным, 256 символов. Напимер:
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("mysupersecret_secretkey!123")), 
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("mysupersecret_secretkey!123123123123123")), 
 
         ValidateIssuerSigningKey = true,
     };
